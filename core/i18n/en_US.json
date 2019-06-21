@@ -1,0 +1,32 @@
+{
+    "plugins\/ecowater\/desktop\/php\/ecowater.php": {
+        "Detecter": "Detecter",
+        "Gestion": "Gestion",
+        "Configuration": "Configuration",
+        "Mes equipements": "Mes equipements",
+        "Général": "Général",
+        "Identifiant de l'équipement": "Identifiant de l'équipement",
+        "Nom de l'équipement": "Nom de l'équipement",
+        "Nom de la ecowater": "Nom de la ecowater",
+        "Objet parent": "Objet parent",
+        "Aucun": "Aucun",
+        "Catégorie": "Catégorie",
+        "Activer": "Activer",
+        "Visible": "Visible",
+        "Indicateurs": "Indicateurs",
+        "Nom": "Nom",
+        "Sous-Type": "Sous-Type",
+        "Paramètres": "Paramètres",
+        "Supprimer": "Supprimer",
+        "Sauvegarder": "Sauvegarder"
+    },
+    "plugins\/ecowater\/plugin_info\/configuration.php": {
+        "Compte ecowater": "Compte ecowater",
+        "Password ecowater": "Password ecowater"
+    },
+    "plugins\/ecowater\/core\/class\/ecowater.class.php": {
+        "Démarrer": "Démarrer",
+        "Arrêter": "Arrêter",
+        "Ranger": "Ranger"
+    }
+}

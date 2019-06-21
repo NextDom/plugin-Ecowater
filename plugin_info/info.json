@@ -1,0 +1,13 @@
+{
+	"id" : "ecowater",
+	"name" : "Ecowater System",
+	"description" : "Plugin pour adoucisseurs Ecowater connectés",
+	"licence" : "AGPL",
+	"author" : "Fefeld",
+	"require" : "3.0",
+	"category" : "devicecommunication",
+	"hasDependency" : false,
+	"hasOwnDeamon" : false,
+        "changelog" : "https://jeedom.github.io/plugin-ecowter/#language#/changelog",
+        "documentation" : "https://jeedom.github.io/plugin-ecowter/#language#/"
+}

@@ -1,0 +1,32 @@
+{
+    "plugins\/ecowater\/desktop\/php\/ecowater.php": {
+        "Detecter": "entdecken",
+        "Gestion": "Verwaltung",
+        "Configuration": "Konfiguration",
+        "Mes equipements": "Mein Gerät",
+        "Général": "Allgemein",
+        "Identifiant de l'équipement": "Geräte ID",
+        "Nom de l'équipement": "Gerätename",
+        "Nom de la ecowater": "Husqvarna Name",
+        "Objet parent": "Elternobjekt",
+        "Aucun": "Keine",
+        "Catégorie": "Kategorie",
+        "Activer": "Aktivieren",
+        "Visible": "Sichtbar",
+        "Indicateurs": "Indicateurs",
+        "Nom": "Name",
+        "Sous-Type": "Unter-Typ",
+        "Paramètres": "Parameter",
+        "Supprimer": "Löschen",
+        "Sauvegarder": "Speichern"
+    },
+    "plugins\/ecowater\/plugin_info\/configuration.php": {
+        "Compte ecowater": "Compte ecowater",
+        "Password ecowater": "Husqvarna Password"
+    },
+    "plugins\/ecowater\/core\/class\/ecowater.class.php": {
+        "Démarrer": "gestartet",
+        "Arrêter": "Arrêter",
+        "Ranger": "Ranger"
+    }
+}
