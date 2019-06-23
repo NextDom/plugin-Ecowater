@@ -8,6 +8,6 @@
 	"category" : "devicecommunication",
 	"hasDependency" : false,
 	"hasOwnDeamon" : false,
-        "changelog" : "https://jeedom.github.io/plugin-ecowter/#language#/changelog",
-        "documentation" : "https://jeedom.github.io/plugin-ecowter/#language#/"
+        "changelog" : "https://nextdom.github.io/plugin-EcoWater/#language#/changelog",
+        "documentation" : "https://nextdom.github.io/plugin-EcoWater/#language#/"
 }
