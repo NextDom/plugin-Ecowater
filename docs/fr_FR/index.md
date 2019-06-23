@@ -15,7 +15,7 @@ pour ajouter un equipement, il vous suffit de clicker sur [Detecter]
 ![ecowater2](../images/Detecter.png)
 
 Vous retrouvez ici toute la configuration de votre équipement :
-![ecowater2](../images/1st\ Ecowater.png)
+![ecowater2](../images/1stEcowater.png)
 
 * Nom de l'équipement : nom de votre adoucisseur
 * DSN  : "Device Serial Number" : l'ID unique de votre équipement
