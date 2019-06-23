@@ -12,18 +12,18 @@ Après téléchargement du plugin, il vous suffit d'activer celui-ci, puis de le
 
 La configuration des équipements Ecowater est accessible à partir du menu plugin puis objet connectés .
 pour ajouter un equipement, il vous suffit de clicker sur [Detecter]
-![ecowater2](../docs/images/Detecter.png)
+![ecowater2](../images/Detecter.png)
 
 Vous retrouvez ici toute la configuration de votre équipement :
+![ecowater2](../images/1st\ Ecowater.png)
 
-* Nom de l'équipement Mode : nom de votre équipement Mode,
+* Nom de l'équipement : nom de votre adoucisseur
+* DSN  : "Device Serial Number" : l'ID unique de votre équipement
+* Model  : Model d'adoucisseur
 * Objet parent : indique l'objet parent auquel appartient l'équipement,
 * Activer : permet de rendre votre équipement actif,
 * Visible : rend votre équipement visible sur le dashboard,
 * Catégorie : les catégories de l'équipement (il peut appartenir à plusieurs catégories).
-* Adresse IP : Adresse IP de la télévision
-* Adresse MAC : Adresse MAC de la télévision au format 00:00:00:00:00:00. Il est possible de la retrouver dans le menu info de la télévision, sur l'interface d'administration de votre routeur ou bien sur l'étiquette derrière le téléviseur.
-* Clé TV : Clé de sécurité renseignée sur la télévision ou bien code pin renseigné lors de la procédure d'association.
 
 
 ## Association
