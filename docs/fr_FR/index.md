@@ -21,35 +21,10 @@ Vous retrouvez ici toute la configuration de votre équipement :
 * DSN  : "Device Serial Number" : l'ID unique de votre équipement
 * Model  : Model d'adoucisseur
 * Objet parent : indique l'objet parent auquel appartient l'équipement,
+* Catégorie : les catégories de l'équipement (il peut appartenir à plusieurs catégories).
 * Activer : permet de rendre votre équipement actif,
 * Visible : rend votre équipement visible sur le dashboard,
-* Catégorie : les catégories de l'équipement (il peut appartenir à plusieurs catégories).
 
-
-## Association
-
-Deux modes de communications peuvent êtres utilisés.
-
-* Usage d'une clé partagée (préféré)
-* Association à l'aide d'un PIN code
-
-### Clé partagée
-
-![sonybravia1](../images/config.png)
-
-** Activer l'accès distant sur votre TV : [Paramètres] => [Réseaux] => [Configuration Réseau domestique] => [Contrôle IP] => [On]
-** Activer l'accès par clé partagée : [Paramètres] => [Réseaux] => [Configuration Réseau domestique] => [Contrôle IP] => [Authentification] => [Normal et clé pré-partagée]
-** Choisir la clé et la renseigner ci-dessus : [Paramètres] => [Réseaux] => [Configuration Réseau domestique] => [Contrôle IP] => [Clé pré-partagée] => sony
-
-### Pin code
-
-Renseigner l'adresse ip et mac sur l'équipement, sauvegarder puis exécuter le processus d'association :
-
-![sonybravia2](../images/association_button.png)
-
-![sonybravia3](../images/sonybravia_screenshot2.png)
-
-Suivre les indications ensuite.
 
 Commandes
 ===
