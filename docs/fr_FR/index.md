@@ -1,15 +1,18 @@
 Présentation
 ===
-Plugin de communication avec les TV Sony Bravia pour la solution domotique Jeedom
+Plugin de control des adoucisseur d'eau Ecowater pour la solution domotique NextDom/Jeedom
 
 
 Configuration du plugin
 ===
-Après téléchargement du plugin, il vous suffit juste d'activer celui-ci, il n'y a aucune configuration à ce niveau.
+Après téléchargement du plugin, il vous suffit d'activer celui-ci, puis de le configurer en fournissant vos credentiels wifi.ecowater.com
+![ecowater1](../images/Config1.png)
 
 ## Configuration des équipements
 
-La configuration des équipements TV Sony est accessible à partir du menu plugin puis multimédia :
+La configuration des équipements Ecowater est accessible à partir du menu plugin puis objet connectés .
+pour ajouter un equipement, il vous suffit de clicker sur [Detecter]
+![ecowater2](../docs/images/Detecter.png)
 
 Vous retrouvez ici toute la configuration de votre équipement :
 
