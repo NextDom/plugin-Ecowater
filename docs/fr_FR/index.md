@@ -51,4 +51,4 @@ Bug
 ===
 En cas de bug avéré du plugin il est possible d'ouvrir une issue :
 
-[https://github.com/NextDom/plugin-EcoWater/issues](https://github.com/NextDom/plugin-EcoWater/issues)
+[https://github.com/NextDom/plugin-Ecowater/issues](https://github.com/NextDom/plugin-Ecowater/issues)
