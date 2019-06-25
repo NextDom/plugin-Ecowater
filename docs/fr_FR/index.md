@@ -10,8 +10,8 @@ Après téléchargement du plugin, il vous suffit d'activer celui-ci, puis de le
 
 ## Configuration des équipements
 
-La configuration des équipements Ecowater est accessible à partir du menu plugin puis objet connectés .
-pour ajouter un equipement, il vous suffit de clicker sur [Detecter]
+La configuration des équipements Ecowater est accessible à partir du menu plugin->Objet connectés. 
+Pour ajouter un équipement, synchronisez avec votre compte Ecowater : cliquer sur  [Détecter] 
 ![ecowater2](../images/Detecter.png)
 
 Vous retrouvez ici toute la configuration de votre équipement :
@@ -26,165 +26,29 @@ Vous retrouvez ici toute la configuration de votre équipement :
 * Visible : rend votre équipement visible sur le dashboard,
 
 
-Commandes
+View
 ===
-Exemple de commandes diponibles :
+Votre adoucisseur :
+![ecowater2](../images/view1.png)
 
-![sonybravia4](../images/command_info_list.png)
-
-## Commandes régulières
-
-![sonybravi54](../images/command_list.png)
-
-## Commandes RAW
-
-Il est possible d'envoyer des commandes non implémentées dans le plugin au moyen d'une commande RAW :
-
-![sonybravi54](../images/raw_command.png)
-
-## Liste non exhaustive
-
-|Nom|Code|
-|---|----|
-|	Num1	|	AAAAAQAAAAEAAAAAAw== |
-|	Num2	|	AAAAAQAAAAEAAAABAw== |
-|	Num3	|	AAAAAQAAAAEAAAACAw== |
-|	Num4	|	AAAAAQAAAAEAAAADAw== |
-|	Num5	|	AAAAAQAAAAEAAAAEAw== |
-|	Num6	|	AAAAAQAAAAEAAAAFAw== |
-|	Num7	|	AAAAAQAAAAEAAAAGAw== |
-|	Num8	|	AAAAAQAAAAEAAAAHAw== |
-|	Num9	|	AAAAAQAAAAEAAAAIAw== |
-|	Num0	|	AAAAAQAAAAEAAAAJAw== |
-|	Num11	|	AAAAAQAAAAEAAAAKAw== |
-|	Num12	|	AAAAAQAAAAEAAAALAw== |
-|	Enter	|	AAAAAQAAAAEAAAALAw== |
-|	GGuide	|	AAAAAQAAAAEAAAAOAw== |
-|	ChannelUp	|	AAAAAQAAAAEAAAAQAw== |
-|	ChannelDown	|	AAAAAQAAAAEAAAARAw== |
-|	VolumeUp	|	AAAAAQAAAAEAAAASAw== |
-|	VolumeDown	|	AAAAAQAAAAEAAAATAw== |
-|	Mute	|	AAAAAQAAAAEAAAAUAw== |
-|	TvPower	|	AAAAAQAAAAEAAAAVAw== |
-|	Audio	|	AAAAAQAAAAEAAAAXAw== |
-|	MediaAudioTrack	|	AAAAAQAAAAEAAAAXAw== |
-|	Tv	|	AAAAAQAAAAEAAAAkAw== |
-|	Input	|	AAAAAQAAAAEAAAAlAw== |
-|	TvInput	|	AAAAAQAAAAEAAAAlAw== |
-|	TvAntennaCable	|	AAAAAQAAAAEAAAAqAw== |
-|	WakeUp	|	AAAAAQAAAAEAAAAuAw== |
-|	PowerOff	|	AAAAAQAAAAEAAAAvAw== |
-|	Sleep	|	AAAAAQAAAAEAAAAvAw== |
-|	Right	|	AAAAAQAAAAEAAAAzAw== |
-|	Left	|	AAAAAQAAAAEAAAA0Aw== |
-|	SleepTimer	|	AAAAAQAAAAEAAAA2Aw== |
-|	Analog2	|	AAAAAQAAAAEAAAA4Aw== |
-|	TvAnalog	|	AAAAAQAAAAEAAAA4Aw== |
-|	Display	|	AAAAAQAAAAEAAAA6Aw== |
-|	Jump	|	AAAAAQAAAAEAAAA7Aw== |
-|	PicOff	|	AAAAAQAAAAEAAAA+Aw== |
-|	PictureOff	|	AAAAAQAAAAEAAAA+Aw== |
-|	Teletext	|	AAAAAQAAAAEAAAA\/Aw== |
-|	Video1	|	AAAAAQAAAAEAAABAAw== |
-|	Video2	|	AAAAAQAAAAEAAABBAw== |
-|	AnalogRgb1	|	AAAAAQAAAAEAAABDAw== |
-|	Home	|	AAAAAQAAAAEAAABgAw== |
-|	Exit	|	AAAAAQAAAAEAAABjAw== |
-|	PictureMode	|	AAAAAQAAAAEAAABkAw== |
-|	Confirm	|	AAAAAQAAAAEAAABlAw== |
-|	Up	|	AAAAAQAAAAEAAAB0Aw== |
-|	Down	|	AAAAAQAAAAEAAAB1Aw== |
-|	ClosedCaption	|	AAAAAgAAAKQAAAAQAw== |
-|	Component1	|	AAAAAgAAAKQAAAA2Aw== |
-|	Component2	|	AAAAAgAAAKQAAAA3Aw== |
-|	Wide	|	AAAAAgAAAKQAAAA9Aw== |
-|	EPG	|	AAAAAgAAAKQAAABbAw== |
-|	PAP	|	AAAAAgAAAKQAAAB3Aw== |
-|	TenKey	|	AAAAAgAAAJcAAAAMAw== |
-|	BSCS	|	AAAAAgAAAJcAAAAQAw== |
-|	Ddata	|	AAAAAgAAAJcAAAAVAw== |
-|	Stop	|	AAAAAgAAAJcAAAAYAw== |
-|	Pause	|	AAAAAgAAAJcAAAAZAw== |
-|	Play	|	AAAAAgAAAJcAAAAaAw== |
-|	Rewind	|	AAAAAgAAAJcAAAAbAw== |
-|	Forward	|	AAAAAgAAAJcAAAAcAw== |
-|	DOT	|	AAAAAgAAAJcAAAAdAw== |
-|	Rec	|	AAAAAgAAAJcAAAAgAw== |
-|	Return	|	AAAAAgAAAJcAAAAjAw== |
-|	Blue	|	AAAAAgAAAJcAAAAkAw== |
-|	Red	|	AAAAAgAAAJcAAAAlAw== |
-|	Green	|	AAAAAgAAAJcAAAAmAw== |
-|	Yellow	|	AAAAAgAAAJcAAAAnAw== |
-|	SubTitle	|	AAAAAgAAAJcAAAAoAw== |
-|	CS	|	AAAAAgAAAJcAAAArAw== |
-|	BS	|	AAAAAgAAAJcAAAAsAw== |
-|	Digital	|	AAAAAgAAAJcAAAAyAw== |
-|	Options	|	AAAAAgAAAJcAAAA2Aw== |
-|	Media	|	AAAAAgAAAJcAAAA4Aw== |
-|	Prev	|	AAAAAgAAAJcAAAA8Aw== |
-|	Next	|	AAAAAgAAAJcAAAA9Aw== |
-|	DpadCenter	|	AAAAAgAAAJcAAABKAw== |
-|	CursorUp	|	AAAAAgAAAJcAAABPAw== |
-|	CursorDown	|	AAAAAgAAAJcAAABQAw== |
-|	CursorLeft	|	AAAAAgAAAJcAAABNAw== |
-|	CursorRight	|	AAAAAgAAAJcAAABOAw== |
-|	ShopRemoteControlForcedDynamic	|	AAAAAgAAAJcAAABqAw== |
-|	FlashPlus	|	AAAAAgAAAJcAAAB4Aw== |
-|	FlashMinus	|	AAAAAgAAAJcAAAB5Aw== |
-|	DemoMode	|	AAAAAgAAAJcAAAB8Aw== |
-|	Analog	|	AAAAAgAAAHcAAAANAw== |
-|	Mode3D	|	AAAAAgAAAHcAAABNAw== |
-|	DigitalToggle	|	AAAAAgAAAHcAAABSAw== |
-|	DemoSurround	|	AAAAAgAAAHcAAAB7Aw== |
-|	{"name":"*AD	|	AAAAAgAAABoAAAA7Aw== |
-|	AudioMixUp	|	AAAAAgAAABoAAAA8Aw== |
-|	AudioMixDown	|	AAAAAgAAABoAAAA9Aw== |
-|	PhotoFrame	|	AAAAAgAAABoAAABVAw== |
-|	Tv_Radio	|	AAAAAgAAABoAAABXAw== |
-|	SyncMenu	|	AAAAAgAAABoAAABYAw== |
-|	Hdmi1	|	AAAAAgAAABoAAABaAw== |
-|	Hdmi2	|	AAAAAgAAABoAAABbAw== |
-|	Hdmi3	|	AAAAAgAAABoAAABcAw== |
-|	Hdmi4	|	AAAAAgAAABoAAABdAw== |
-|	TopMenu	|	AAAAAgAAABoAAABgAw== |
-|	PopUpMenu	|	AAAAAgAAABoAAABhAw== |
-|	OneTouchTimeRec	|	AAAAAgAAABoAAABkAw== |
-|	OneTouchView	|	AAAAAgAAABoAAABlAw== |
-|	DUX	|	AAAAAgAAABoAAABzAw== |
-|	FootballMode	|	AAAAAgAAABoAAAB2Aw== |
-|	iManual	|	AAAAAgAAABoAAAB7Aw== |
-|	Netflix	|	AAAAAgAAABoAAAB8Aw== |
-|	Assists	|	AAAAAgAAAMQAAAA7Aw== |
-|	FeaturedApp	|	AAAAAgAAAMQAAABEAw== |
-|	FeaturedAppVOD	|	AAAAAgAAAMQAAABFAw== |
-|	GooglePlay	|	AAAAAgAAAMQAAABGAw== |
-|	ActionMenu	|	AAAAAgAAAMQAAABLAw== |
-|	Help	|	AAAAAgAAAMQAAABNAw== |
-|	TvSatellite	|	AAAAAgAAAMQAAABOAw== |
-|	WirelessSubwoofer	|	AAAAAgAAAMQAAAB+Aw== |
-|	AndroidMenu	|	AAAAAgAAAMQAAABPAw== |
+* Ce Jour : Consommation d’eau adoucie d’eau aujourd’hui
+* Eau Disponible : Eau restante avant régénération.
+* Moyenne : Consommation journalière moyenne
+* Niveau Sel : Niveau Sel restant
+* Recharger Sel : Nombre de jour restant 
+* Connection : État de la connections internet (Adoucisseur <-> internet)
+          * « Régénérer maintenant » : lancer une régénération immédiate.
 
 
-Compatibilités testées :
-===
-* KDL-50W829B
-* KDL-42W705B
-* KDL-55W805C
-* KD-55X9005B
-* KDL-42W805A
-* KDL-60W605B
-* KDL-42W650A
-* KD-49XD8305 Android
-* KD-55X8509C Android
-* KD-55SD8505 Android
-* KD-55XD8505 Android
-* KD-55XD8005 Android
-* KDL-50W755c Android
-* XBR-43X800D Android
+## Commandes 
+![ecowater2](../images/view2.png)
+
+* Commande : 
+          * « Programmer une régénération » :  programmer une régénération au prochain cycle (horaires définis sur wifi.ecowater.com)
 
 
 Bug
 ===
 En cas de bug avéré du plugin il est possible d'ouvrir une issue :
 
-[https://github.com/Jeedom-Plugins-Extra/plugin-sony-bravia/issues](https://github.com/Jeedom-Plugins-Extra/plugin-sony-bravia/issues)
+[https://github.com/NextDom/plugin-EcoWater/issues](https://github.com/NextDom/plugin-EcoWater/issues)
