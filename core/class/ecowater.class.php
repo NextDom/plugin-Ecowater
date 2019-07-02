@@ -69,6 +69,9 @@ class ecowater extends eqLogic {
                     $eqLogic->setIsEnable(1);
                     $eqLogic->setIsVisible(1);
 		    $eqLogic->setConfiguration('DSN',$dsn);
+                log::add('ecowater','info','adding new Softtner .. ');
+                    $eqLogic->setConfiguration('Maxtreated',10);
+                log::add('ecowater','info','adding new Softtner ... ');
 		    $eqLogic->setConfiguration('Token',$tok);
 		    //$eqLogic->setStatus('DSN', $dsn);
 		    $eqLogic->setConfiguration('modelDesc',$modelDesc);
@@ -202,11 +205,13 @@ class ecowater extends eqLogic {
 			   }
 	                }
 			if ($id == "treated_water_avail_gals"){
-                                $previous_max_treated_water_avail = $this->getConfiguration('Max_treated');
+                                $previous_max_treated_water_avail = intval($this->getConfiguration('Maxtreated'));
 				$max_treated_water_avail_gals = (intval(intval($property["property"]["value"] * $multiplier)/100) + 1)*100;
 				if ($max_treated_water_avail_gals > $previous_max_treated_water_avail){
-                                    $this->setConfiguration('Max_treated',$max_treated_water_avail_gal);
+                                    $this->setConfiguration('Maxtreated',$max_treated_water_avail_gals);
                                     $cmd->setConfiguration('maxValue',$max_treated_water_avail_gals);
+				    log::add('ecowater','info',"  set max =  ".$max_treated_water_avail_gals);
+                                    $this->save();
 				}
 			}
 
