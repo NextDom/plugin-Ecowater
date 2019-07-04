@@ -175,13 +175,6 @@ class ecowater_api {
 		return false;
 	}
 	
-	function get_status($mover_id)
-	{
-		
-		$url = "https://ads-field.aylanetworks.com/apiv1/devices.json";
-		return $this->get_api($url,"mowers/".$mover_id."/status");
-	}
-
 	function get_Token()
 	{
 		return $this->token;
@@ -192,13 +185,5 @@ class ecowater_api {
 		$this->token = $tok;
 	}
 
-	function control($mover_id, $command)
-	{
-		if ( in_array($command, array('REGEN', 'REGEN-NEXT') ) )
-		{
-		$url = "https://ads-field.aylanetworks.com/apiv1/devices.json";
-			return $this->get_api($url,"mowers/".$mover_id."/control", array("action" => $command));
-		}
-	}
 }
 ?>
