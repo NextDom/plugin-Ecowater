@@ -180,7 +180,6 @@ class ecowater extends eqLogic {
         $session_ecowater->set_Token($this->getConfiguration('Token'));
         if ( $this->getIsEnable() ) {
 	    $session_ecowater->login(config::byKey('account', 'ecowater'), config::byKey('password', 'ecowater'));
-	    $status = $session_ecowater->get_status($this->getLogicalId());
 	    $this->setConfiguration('Token', $session_ecowater->get_Token());
 	    $DataEcowater = $session_ecowater->GetData($this->getLogicalId());
 	    $Properties = json_decode($DataEcowater, true);
@@ -210,7 +209,6 @@ class ecowater extends eqLogic {
 				if ($max_treated_water_avail_gals > $previous_max_treated_water_avail){
                                     $this->setConfiguration('Maxtreated',$max_treated_water_avail_gals);
                                     $cmd->setConfiguration('maxValue',$max_treated_water_avail_gals);
-				    log::add('ecowater','info',"  set max =  ".$max_treated_water_avail_gals);
                                     $this->save();
 				}
 			}
