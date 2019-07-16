@@ -34,22 +34,9 @@ class ecowater_api {
 	}
     function PostProperty($dsn,$property,$valuestring,$valueint,$valuetype)
 	{
-        log::add('ecowater','info','PostProperty');
+		$fields["datapoint"]["value"] = $this->username;
 		$url = "https://ads-field.aylanetworks.com/apiv1/dsns/".$dsn."/properties/".$property."/datapoints.json";
-		##if ($valuetype == "STRING")
-		##	$fields["datapoint"]["value"] = $valuestring;
-		##if (($valuetype <> "STRING"))
-		##        $fields["datapoint"]["value"] = 1;
-		$fields["datapoint"]["value"] = "1";
-		$result = $this->post_api($url,"token", $fields);
-        log::add('ecowater','info',$result);
-        log::add('ecowater','info',$url);
-		return $result;
-	}
-    function RefreshSofteners()
-	{
-		$url = "https://ads-field.aylanetworks.com/apiv1/dsns/AC000W000064014/properties/get_frequent_data/datapoints.json";
-		$fields["datapoint"]["value"] = 1;
+		$fields["datapoint"]["value"] = $valueint;
 		$result = $this->post_api($url,"token", $fields);
 		return $result;
 	}
@@ -123,14 +110,18 @@ class ecowater_api {
 		curl_setopt($session, CURLOPT_POST, true);
 		curl_setopt($session, CURLOPT_RETURNTRANSFER, true);
 		$input_json = json_encode ($fields);
-        log::add('ecowater','info',$input_json);
+        log::add('ecowater','info',"input_url =".$url);
+        log::add('ecowater','info',"input_json =".$input_json);
+        log::add('ecowater','info',"fields =".$input_json);
 		if ( isset($fields) )
 		{
+                        log::add('ecowater','info',"CURLOPT_POSTFIELDS =".$input_json);
 			curl_setopt($session, CURLOPT_POSTFIELDS, $input_json);
 		}
 		$json = curl_exec($session);
 		curl_close($session);
-        log::add('ecowater','info',$json);
+        log::add('ecowater','info',"result =".$json);
+        log::add('ecowater','info',"Ke passa");
 		return json_decode($json);
 	}
 

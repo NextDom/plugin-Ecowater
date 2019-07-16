@@ -241,7 +241,6 @@ class ecowater extends eqLogic {
                         log::add('ecowater','info',"connection_status =  ".$Softner["device"]["connection_status"]);
                 }
             }
-	    $content = $session_ecowater->RefreshSofteners();
             $this->save();
 	    }
         //$session_ecowater->logOut();
@@ -260,7 +259,8 @@ class ecowaterCmd extends cmd
             $mydsn = $eqLogic->getConfiguration('DSN');
             $session_ecowater = new ecowater_api();
 	    $session_ecowater->login(config::byKey('account', 'ecowater'), config::byKey('password', 'ecowater'));
-            $session_ecowater->set_Token($this->getConfiguration('Token'));
+	    $this->setConfiguration('Token', $session_ecowater->get_Token());
+	    $DataEcowater = $session_ecowater->GetData($this->getLogicalId());
             $order = $session_ecowater->PostProperty($mydsn,$this->getLogicalId(),"",$_options['select'],"ENUM");
         }
     }
