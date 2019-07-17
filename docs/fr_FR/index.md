@@ -37,7 +37,6 @@ Votre adoucisseur :
 * Niveau Sel : Niveau Sel restant
 * Recharger Sel : Nombre de jour restant 
 * Connection : État de la connections internet (Adoucisseur <-> internet)
-          * « Régénérer maintenant » : lancer une régénération immédiate.
 
 
 ## Commandes 
@@ -45,6 +44,7 @@ Votre adoucisseur :
 
 * Commande : 
           * « Programmer une régénération » :  programmer une régénération au prochain cycle (horaires définis sur wifi.ecowater.com)
+          * « Régénérer maintenant » : lancer une régénération immédiate. (Pas d'annulation de commande possible)
 
 
 Bug

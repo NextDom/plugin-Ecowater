@@ -1,54 +1,53 @@
-Présentation
+In a nutshell
 ===
-Plugin de control des adoucisseur d'eau Ecowater pour la solution domotique NextDom/Jeedom
+This plugin controls your water softner (brand Ecowater).
 
 
-Configuration du plugin
+Configuration
 ===
-Après téléchargement du plugin, il vous suffit d'activer celui-ci, puis de le configurer en fournissant vos credentiels wifi.ecowater.com
+After downloaing this plugin, you will need to activate it and then provide your ecowater credentials (wifi.ecowater.com)
 ![ecowater1](../images/Config1.png)
 
-## Configuration des équipements
+## Water softner configuration
 
-La configuration des équipements Ecowater est accessible à partir du menu plugin->Objet connectés. 
-Pour ajouter un équipement, synchronisez avec votre compte Ecowater : cliquer sur  [Détecter] 
+You can access the the equipment configuration from the menu plugin->connected objects
+To add an equipment, synchronize with you Ecowate Account (www.ecowater.com): click on [Detect]
 ![ecowater2](../images/Detecter.png)
 
-Vous retrouvez ici toute la configuration de votre équipement :
+here is the Equpment configuration :
 ![ecowater2](../images/1stEcowater.png)
 
-* Nom de l'équipement : nom de votre adoucisseur
-* DSN  : "Device Serial Number" : l'ID unique de votre équipement
-* Model  : Model d'adoucisseur
-* Objet parent : indique l'objet parent auquel appartient l'équipement,
-* Catégorie : les catégories de l'équipement (il peut appartenir à plusieurs catégories).
-* Activer : permet de rendre votre équipement actif,
-* Visible : rend votre équipement visible sur le dashboard,
-
+* Name of equipment : Name of your water softner
+* DSN  : "Device Serial Number" : unique ID of your water softner
+* Model  : water softner model 
+* Parent Object : Parent Objet
+* Category  : Equipment category
+* Activate : Active the equipment
+* Visible : to make your equipment visible.
 
 View
 ===
-Votre adoucisseur :
+Your water softner :
 ![ecowater2](../images/view1.png)
 
-* Ce Jour : Consommation d’eau adoucie d’eau aujourd’hui
-* Eau Disponible : Eau restante avant régénération.
-* Moyenne : Consommation journalière moyenne
-* Niveau Sel : Niveau Sel restant
-* Recharger Sel : Nombre de jour restant 
+* Today : Today's water usage
+* Available : treated water available
+* Average : average water usage
+* Salt Level : Remaining Salt Level
+* Recharge Salt : Number of days before recharging Salt.
 * Connection : État de la connections internet (Adoucisseur <-> internet)
-          * « Régénérer maintenant » : lancer une régénération immédiate.
 
 
 ## Commandes 
 ![ecowater2](../images/view2.png)
 
-* Commande : 
+* Command : (to translate)
           * « Programmer une régénération » :  programmer une régénération au prochain cycle (horaires définis sur wifi.ecowater.com)
+          * « Régénérer maintenant » : lancer une régénération immédiate. (Pas d'annulation de commande possible)
 
 
 Bug
 ===
 En cas de bug avéré du plugin il est possible d'ouvrir une issue :
 
-[https://github.com/NextDom/plugin-EcoWater/issues](https://github.com/NextDom/plugin-EcoWater/issues)
+[https://github.com/NextDom/plugin-Ecowater/issues](https://github.com/NextDom/plugin-Ecowater/issues)
