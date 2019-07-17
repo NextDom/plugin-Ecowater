@@ -90,14 +90,14 @@ class ecowater extends eqLogic {
         $this->scan();
     }
 
-    private function getListeDefaultCommandes()
+    private function getListDefaultCmds()
     {
         return array(   "out_of_salt_estimate_days" => array('Recharger Sel', 'info', 'numeric', "jours", 0, "GENERIC_INFO", 'jauge', 'jauge', 'A',1,365),
 			"gallons_used_today" => array('Ce jour', 'info', 'numeric', "litres", 0, "GENERIC_INFO", 'jauge', 'jauge', 'B',3.785,1000),
                         "avg_daily_use_gals" => array('Moyenne', 'info', 'numeric', "litres", 0, "GENERIC_INFO", 'jauge', 'jauge', 'C',3.785,1000),
 			"salt_level_tenths" => array('Niveau Sel', 'info', 'numeric', "/10", 0, "GENERIC_INFO", 'jauge', 'jauge', 'D',0.1,10),
 			"treated_water_avail_gals" => array('Eau Disponible','info','numeric',"litres",0,"GENERIC_INFO",'jauge','jauge','E',3.785,4000),
-			"connection_status" => array('Connection','info','binary','',0,"GENERIC_INFO",'badge','badge','F',0,0),
+			"connection_status" => array('Connection','info','binary','',1,"GENERIC_INFO",'badge','badge','F',0,0),
 			"regen_status_enum" => array('Commande', 'action', 'select', "", 0, "GENERIC_ACTION", '', '', '1|'.__('progammer une régénération',__FILE__).';2|'.__('Régénérer maintenant',__FILE__))
 
         );
@@ -105,7 +105,7 @@ class ecowater extends eqLogic {
 
     public function postUpdate()
     {
-        foreach( $this->getListeDefaultCommandes() as $id => $data)
+        foreach( $this->getListDefaultCmds() as $id => $data)
 	{
 	    list($name, $type, $subtype, $unit, $invertBinary, $generic_type, $template_dashboard, $template_mobile, $listValue, $multiplier,$maxValue) = $data;
             $cmd = $this->getCmd(null, $id);
@@ -186,7 +186,7 @@ class ecowater extends eqLogic {
              
             foreach ($Properties as $property )
 	    {
-                foreach( $this->getListeDefaultCommandes() as $id => $data)
+                foreach( $this->getListDefaultCmds() as $id => $data)
                 {
 	            list($name, $type, $subtype, $unit, $invertBinary, $generic_type, $template_dashboard, $template_mobile, $listValue, $multiplier,$maxValue) = $data;
 	            if ($id == $property["property"]["name"]){
