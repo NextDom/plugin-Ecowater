@@ -2,7 +2,9 @@
 if (!isConnect('admin')) {
     throw new Exception('{{401 - Accès non autorisé}}');
 }
-sendVarToJS('eqType', 'ecowater');
+$plugin = plugin::byId('ecowater');
+sendVarToJS('eqType', $plugin->getId());
+$eqLogics = eqLogic::byType($plugin->getId());
 ?>
 
 <div class="row row-overflow">
@@ -90,20 +92,24 @@ sendVarToJS('eqType', 'ecowater');
 			    <div class="col-lg-3">
                                 <input type="text" class="eqLogicAttr form-control" data-l1key="configuration" data-l2key="modelDesc"  readonly/>
                             </div>
-                        </div>
-                        <div class="form-group">
-                            <label class="col-lg-2 control-label" >{{Objet parent}}</label>
-                            <div class="col-lg-3">
-                                <select class="form-control eqLogicAttr" data-l1key="object_id">
-				    <option value="">{{Aucun}}</option>
-                                    <?php
-                                    foreach (object::all() as $object) {
-                                        echo '<option value="' . $object->getId() . '">' . $object->getName() . '</option>'."\n";
-                                    }
-                                    ?>
-                                </select>
-                            </div>
 			</div>
+
+
+
+                        <div class="form-group">
+                             <label class="col-sm-3 control-label" >{{Objet parent}}</label>
+                             <div class="col-sm-3">
+                                 <select id="sel_object" class="eqLogicAttr form-control" data-l1key="object_id">
+                                       <option value="">{{Aucun}}</option>
+                                             <?php
+                                                    foreach (jeeObject::all() as $object) {
+                                                         echo '<option value="' . $object->getId() . '">' . $object->getName() . '</option>';
+                                                    }
+                                             ?>
+                                             </select>
+                               </div>
+                        </div>
+
                         <div class="form-group">
                             <label class="col-lg-2 control-label">{{Catégorie}}</label>
                             <div class="col-lg-8">
